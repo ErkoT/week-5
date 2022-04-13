@@ -1,19 +1,28 @@
+//select movie poster original image
 let moviePoster = document.querySelector('.movie-poster');
+console.log(moviePoster);
 
+//select modal windows layer
 let modal = document.querySelector('#myModal');
+console.log(modal);
 
-let closeBtn = document.querySelector('closeBtn');
+//select close button
+let closeBtn = document.querySelector('.closeBtn');
+console.log(closeBtn);
 
+//select modal windows image
 let modalImage = document.querySelector('.movie-poster-modal');
+console.log(modalImage);
 
 
 moviePoster.addEventListener('click', ()=> {
-    modal.getElementsByClassName.display = 'block';
+    console.log('image clicked');
+    modal.style.display = 'block';
     modalImage.src = moviePoster.src;
 });
 
 closeBtn.addEventListener('click', ()=> {
-    modal.getElementsByClassName.display = 'none';
+    modal.style.display = 'none';
 });
 
 window.addEventListener('click', (event)=> {
